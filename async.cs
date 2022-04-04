@@ -1,17 +1,18 @@
 ﻿using System.Threading.Tasks;
 
-namespace Transas.Examples.Ioc
+namespace Transas.Examples.Api
 {
-    public interface IDbRepository
+    public MyController : ApiController 
     {
-        Task Save(string text);
-    }
-
-    public class DbRepository : IDbRepository
-    {
-        public async Task Save(string text)
+        public async Task<IHttpActionResult> ExampleMethodAsync()
         {
-            // save text to database
+            var res1 = await LoadDataFromDatabase();
+
+            res1++;
+
+            var res2 = await SaveDataToDatabase(res1);
+
+            return Ok(res2);
         }
     }
 }
