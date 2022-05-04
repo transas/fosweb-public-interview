@@ -1,0 +1,10 @@
+1. We need a simple service with Web API using REST principles
+2. Methods to be implemented in API:
+- save file (size is from 0 bytes up to 1GB) to local disk (file will be transfered in request body)
+- calc sha256 hash of stored file (return value must be string presentation of sha256 hash)
+- delete stored file from local disk
+3. Use Basic authorization. Please store user/pwd in web.config to be simple
+4. Add Swagger interface to test API
+5. Please use unit tests and IoC, good SOLID practice is required.
+6. Correct handling of errors is required.
+7. It is strong recomented to do not allow user to delete file during sha256 hash is calculating. Please return some HTTP error in this case.
