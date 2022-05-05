@@ -8,6 +8,8 @@
 5. Please use unit tests and IoC, good SOLID practice is required.
 6. Correct handling of errors is required.
 7. It is strong recomented to do not allow user to delete file during sha256 hash is calculating. Please return some HTTP error in this case.
-8. Please provide the possible improving of project in future in the direction (without large architecture changes) 
+8*. Please provide the possible improving of project in future in the direction (without large architecture changes) 
 - of saving the file to Azure storage 
 - scalability of instances count
+
+* - do not implement it if you have not time. Just think about it while design architecture. 
