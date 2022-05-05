@@ -1,6 +1,6 @@
 1. We need a simple service with Web API using REST principles
 2. Methods to be implemented in API:
-- save file (size is from 0 bytes up to 1GB) to local disk (file will be transfered in request body)
+- save file (size is from 0 bytes up to 10MB) to local disk (file will be transfered in request body)
 - calc sha256 hash of stored file (return value must be string presentation of sha256 hash)
 - delete stored file from local disk
 3. Use Basic authorization. Please store user/pwd in web.config to be simple
